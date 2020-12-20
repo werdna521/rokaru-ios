@@ -18,6 +18,7 @@
 		496B3EA6258F23D600F68D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496B3EA5258F23D600F68D2D /* Assets.xcassets */; };
 		496B3EA9258F23D600F68D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B3EA7258F23D600F68D2D /* LaunchScreen.storyboard */; };
 		49B42478258F9FF6006136B8 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B42477258F9FF6006136B8 /* Materialize.swift */; };
+		49B4247B258FBAC9006136B8 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4247A258FBAC9006136B8 /* ProductViewController.swift */; };
 		E91AFE455393A7793E6C7B49 /* Pods_Rokaru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		496B3EA8258F23D600F68D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496B3EAA258F23D600F68D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B42477258F9FF6006136B8 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
+		49B4247A258FBAC9006136B8 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		995F87B19068667EAFA36E15 /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.debug.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
 		D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokaru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				496B3EAA258F23D600F68D2D /* Info.plist */,
 				496B3EA2258F23D600F68D2D /* Rokaru.xcdatamodeld */,
 				49B42477258F9FF6006136B8 /* Materialize.swift */,
+				49B4247A258FBAC9006136B8 /* ProductViewController.swift */,
 			);
 			path = Rokaru;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				493EBA34258F7649005F6919 /* ShopViewController.swift in Sources */,
 				493EBA1B258F5969005F6919 /* NgeryCard.swift in Sources */,
 				496B3E9C258F23D600F68D2D /* SceneDelegate.swift in Sources */,
+				49B4247B258FBAC9006136B8 /* ProductViewController.swift in Sources */,
 				496B3EA4258F23D600F68D2D /* Rokaru.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

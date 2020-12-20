@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="1131.8840579710145" y="102.45535714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="jfd-NC-h4u">
             <objects>
-                <viewController id="Aos-23-TYC" sceneMemberID="viewController">
+                <viewController id="Aos-23-TYC" customClass="ProductViewController" customModule="Rokaru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4eL-CW-UUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,17 +300,72 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="cart" catalog="system"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasi-goreng" translatesAutoresizingMaskIntoConstraints="NO" id="AiU-ii-QYW">
+                                <rect key="frame" x="24" y="73" width="366" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="RFZ-5n-YZM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasi Goreng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM0-xV-S4m">
+                                <rect key="frame" x="24" y="299" width="138" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp25.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmS-Ti-npb">
+                                <rect key="frame" x="24" y="336" width="96" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZg-nw-w5S">
+                                <rect key="frame" x="24" y="371" width="366" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="NsN-X7-7FW"/>
+                                </constraints>
+                                <string key="text">Ayam geprek adalah makanan ayam goreng tepung khas Indonesia yang diulek atau dilumatkan bersama sambal bajak. Kini ayam geprek telah menjadi hidangan populer yang dapat ditemukan di hampir semua kota besar di Indonesia, tetapi asal mula ayam geprek berasal dari kota Yogyakarta.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nL-Ed-CZR" customClass="MDCFloatingButton">
+                                <rect key="frame" x="369.5" y="299" width="20.5" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="heart" catalog="system"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X8k-M4-JA4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bmS-Ti-npb" firstAttribute="top" secondItem="xM0-xV-S4m" secondAttribute="bottom" constant="8" id="4LU-7N-NIM"/>
                             <constraint firstItem="Neq-Yf-572" firstAttribute="centerX" secondItem="4eL-CW-UUa" secondAttribute="centerX" id="600-Ut-dw9"/>
+                            <constraint firstItem="3nL-Ed-CZR" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="ETt-1T-Agn"/>
+                            <constraint firstItem="vZg-nw-w5S" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="HCm-Bn-qL7"/>
+                            <constraint firstItem="bmS-Ti-npb" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="Sqe-cc-AdX"/>
+                            <constraint firstItem="xM0-xV-S4m" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="UVz-k3-zqX"/>
+                            <constraint firstItem="xM0-xV-S4m" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="VDt-ul-BdY"/>
                             <constraint firstItem="Neq-Yf-572" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="32" id="VJB-LM-ABM"/>
                             <constraint firstItem="xL4-mc-TPA" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="34" id="bfr-2U-auE"/>
+                            <constraint firstItem="vZg-nw-w5S" firstAttribute="top" secondItem="bmS-Ti-npb" secondAttribute="bottom" constant="8" id="hTA-i0-N8b"/>
+                            <constraint firstItem="AiU-ii-QYW" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="hej-K7-i2I"/>
+                            <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="3nL-Ed-CZR" secondAttribute="trailing" constant="24" id="koo-UK-sWv"/>
+                            <constraint firstItem="AiU-ii-QYW" firstAttribute="top" secondItem="Neq-Yf-572" secondAttribute="bottom" constant="16" id="mr6-y6-rf1"/>
                             <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="xL4-mc-TPA" secondAttribute="trailing" constant="24" id="p1c-bY-PZs"/>
+                            <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="vZg-nw-w5S" secondAttribute="trailing" constant="24" id="sL5-Cc-04Z"/>
+                            <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="AiU-ii-QYW" secondAttribute="trailing" constant="24" id="wGj-4R-pmZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PVp-y4-slS"/>
+                    <connections>
+                        <outlet property="_favoriteButton" destination="3nL-Ed-CZR" id="PEa-Oi-RSL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohK-Vt-hWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,6 +383,7 @@
         <image name="chat" width="24" height="24"/>
         <image name="hand.thumbsdown" catalog="system" width="128" height="128"/>
         <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="home" width="17" height="19"/>
         <image name="nasi-goreng" width="550" height="413"/>
         <image name="phone" catalog="system" width="128" height="115"/>
