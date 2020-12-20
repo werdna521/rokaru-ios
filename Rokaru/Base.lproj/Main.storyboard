@@ -340,11 +340,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="heart" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-L8-xSa" customClass="MDCButton">
-                                <rect key="frame" x="104.66666666666669" y="666" width="205" height="34"/>
-                                <color key="tintColor" red="0.89411764705882346" green="0.71372549019607845" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title=" Tambahkan ke Keranjang"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-wh-NvS" customClass="TORoundedButton">
                                 <rect key="frame" x="20" y="646" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -358,9 +353,6 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onPesanButtonClick:" destination="Aos-23-TYC" eventType="valueChanged" id="ikn-te-g8M"/>
-                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X8k-M4-JA4"/>
@@ -372,13 +364,11 @@
                             <constraint firstItem="3nL-Ed-CZR" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="ETt-1T-Agn"/>
                             <constraint firstItem="vZg-nw-w5S" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="HCm-Bn-qL7"/>
                             <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="Brt-wh-NvS" secondAttribute="trailing" constant="20" id="ICr-Hw-uBW"/>
-                            <constraint firstItem="Kxt-L8-xSa" firstAttribute="centerX" secondItem="4eL-CW-UUa" secondAttribute="centerX" id="JKs-LX-YQJ"/>
                             <constraint firstItem="X8k-M4-JA4" firstAttribute="bottom" secondItem="Brt-wh-NvS" secondAttribute="bottom" constant="20" id="SVE-cf-y1C"/>
                             <constraint firstItem="bmS-Ti-npb" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="Sqe-cc-AdX"/>
                             <constraint firstItem="xM0-xV-S4m" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="UVz-k3-zqX"/>
                             <constraint firstItem="xM0-xV-S4m" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="VDt-ul-BdY"/>
                             <constraint firstItem="Neq-Yf-572" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="32" id="VJB-LM-ABM"/>
-                            <constraint firstItem="X8k-M4-JA4" firstAttribute="bottom" secondItem="Kxt-L8-xSa" secondAttribute="bottom" constant="16" id="aI1-h8-Ikt"/>
                             <constraint firstItem="xL4-mc-TPA" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="34" id="bfr-2U-auE"/>
                             <constraint firstItem="vZg-nw-w5S" firstAttribute="top" secondItem="bmS-Ti-npb" secondAttribute="bottom" constant="8" id="hTA-i0-N8b"/>
                             <constraint firstItem="AiU-ii-QYW" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="hej-K7-i2I"/>
@@ -391,8 +381,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="PVp-y4-slS"/>
                     <connections>
-                        <outlet property="_addToCartButton" destination="Kxt-L8-xSa" id="jiw-Qg-Zv5"/>
                         <outlet property="_favoriteButton" destination="3nL-Ed-CZR" id="PEa-Oi-RSL"/>
+                        <outlet property="_pesanButton" destination="Brt-wh-NvS" id="Zkj-B5-3pk"/>
                         <segue destination="mWU-UF-nK2" kind="show" identifier="gotoDetailBelanja" id="NVK-9F-Ydt"/>
                     </connections>
                 </viewController>
