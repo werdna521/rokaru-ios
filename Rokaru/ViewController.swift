@@ -9,10 +9,23 @@ import UIKit
 import Koloda
 import MaterialComponents
 
+struct Pinsen {
+    var name: String
+    var image: String
+    var distance: String
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var _kolodaView: KolodaView!
     @IBOutlet weak var _hateButton: MDCFloatingButton!
     @IBOutlet weak var _loveButton: MDCFloatingButton!
+
+    var _pinsens = [
+        Pinsen(name: "Pisang Goreng Sen Pin Cing", image: "pisang", distance: "200 m"),
+        Pinsen(name: "Toko Amin", image: "amin", distance: "201 m"),
+        Pinsen(name: "Ayam Gejrot Meledak", image: "gejrot", distance: "2 km"),
+        Pinsen(name: "Nasi Goreng Pinsen Gilak", image: "nasi-goreng", distance: "11 km")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +35,7 @@ class ViewController: UIViewController {
         
         _hateButton.setBackgroundColor(UIColor(hex: "#f1ca20ff"))
         _loveButton.setBackgroundColor(UIColor(hex: "#f86cb4ff"))
+        
     }
 
     @IBAction func _onLove(_ sender: Any) {
@@ -45,14 +59,14 @@ extension ViewController: KolodaViewDelegate {
 
 extension ViewController: KolodaViewDataSource {
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return 20
+        return _pinsens.count + 10
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = NgeryCard(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width - 48, height: 400))
-        view.titleLabel.text = "Nasi Goreng Pinsen Gilak"
-        view.subtitleLabel.text = "200 m"
-        view.imageView.image = UIImage(named: "nasi-goreng")
+        view.titleLabel.text = _pinsens[index % _pinsens.count].name
+        view.subtitleLabel.text = _pinsens[index % _pinsens.count].name
+        view.imageView.image = UIImage(named: _pinsens[index % _pinsens.count].image)
         view.imageView.layer.cornerRadius = 20
         view.imageView.clipsToBounds = true
         return view
