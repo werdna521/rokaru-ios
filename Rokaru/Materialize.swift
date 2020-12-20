@@ -15,5 +15,6 @@ class Materialize {
         btn.setTitleColor(UIColor(hex: "#4B6B7DFF"), for: .normal)
         btn.setImage(UIImage(systemName: icon), for: .normal)
         btn.setImageTintColor(UIColor(hex: tint), for: .normal)
+        btn.layer.cornerRadius = 20
     }
 }
