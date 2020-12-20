@@ -200,6 +200,9 @@
                                 <rect key="frame" x="24" y="436" width="71" height="34"/>
                                 <color key="tintColor" red="0.42352941176470588" green="0.75686274509803919" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Arahkan"/>
+                                <connections>
+                                    <action selector="directionTapped:" destination="1G2-Bu-hAl" eventType="touchUpInside" id="fLN-2g-tBG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdH-vQ-6Ji" customClass="MDCButton">
                                 <rect key="frame" x="103" y="436" width="89.666666666666686" height="22"/>
@@ -208,6 +211,9 @@
                                 <state key="normal" title=" Telepon" image="phone" catalog="system">
                                     <color key="titleColor" red="0.29411764705882354" green="0.41960784313725491" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="teleponTapped:" destination="1G2-Bu-hAl" eventType="touchUpInside" id="wc7-yL-hAk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFO-iD-LFg" customClass="MDCButton">
                                 <rect key="frame" x="200.66666666666666" y="436" width="37" height="30"/>
