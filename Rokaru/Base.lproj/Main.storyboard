@@ -358,6 +358,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPesanButtonClick:" destination="Aos-23-TYC" eventType="valueChanged" id="ikn-te-g8M"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X8k-M4-JA4"/>
@@ -390,6 +393,7 @@
                     <connections>
                         <outlet property="_addToCartButton" destination="Kxt-L8-xSa" id="jiw-Qg-Zv5"/>
                         <outlet property="_favoriteButton" destination="3nL-Ed-CZR" id="PEa-Oi-RSL"/>
+                        <segue destination="mWU-UF-nK2" kind="show" identifier="gotoDetailBelanja" id="NVK-9F-Ydt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohK-Vt-hWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -443,12 +447,12 @@
             </objects>
             <point key="canvasLocation" x="1429" y="837"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Belanja View Controller-->
         <scene sceneID="GDT-YF-Fca">
             <objects>
-                <viewController id="mWU-UF-nK2" sceneMemberID="viewController">
+                <viewController id="mWU-UF-nK2" customClass="DetailBelanjaViewController" customModule="Rokaru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vC-dN-PWw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rokaru" translatesAutoresizingMaskIntoConstraints="NO" id="icU-VY-k2c">
@@ -487,7 +491,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg4-jG-Hr4" customClass="TORoundedButton">
-                                <rect key="frame" x="20" y="666" width="374" height="50"/>
+                                <rect key="frame" x="20" y="646" width="374" height="50"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6z4-yx-l8J"/>
@@ -523,6 +527,7 @@
                             <constraint firstItem="njL-m3-YLh" firstAttribute="bottom" secondItem="Zg4-jG-Hr4" secondAttribute="bottom" constant="20" id="yUa-I1-nog"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="A0K-nP-Lnc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYW-n3-CAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

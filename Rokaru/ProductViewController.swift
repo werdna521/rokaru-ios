@@ -21,7 +21,10 @@ class ProductViewController: UIViewController {
         Materialize.containButton(_addToCartButton, tint: "#E4B65CFF", icon: "cart")
     }
     
-
+    @IBAction func onPesanButtonClick(_ sender: Any) {
+        performSegue(withIdentifier: "gotoDetailBelanja", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
