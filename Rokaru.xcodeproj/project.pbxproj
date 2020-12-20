@@ -14,9 +14,12 @@
 		496B3EA4258F23D600F68D2D /* Rokaru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 496B3EA2258F23D600F68D2D /* Rokaru.xcdatamodeld */; };
 		496B3EA6258F23D600F68D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496B3EA5258F23D600F68D2D /* Assets.xcassets */; };
 		496B3EA9258F23D600F68D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B3EA7258F23D600F68D2D /* LaunchScreen.storyboard */; };
+		AC92D11F12C7FBECF13BB57A /* Pods_Rokaru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E26CE6D53F4BEA42FECF71C /* Pods_Rokaru.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F21395FADDF9CB4E218835 /* Pods-Rokaru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.release.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.release.xcconfig"; sourceTree = "<group>"; };
+		3E26CE6D53F4BEA42FECF71C /* Pods_Rokaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokaru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B3E96258F23D600F68D2D /* Rokaru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokaru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B3E99258F23D600F68D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496B3E9B258F23D600F68D2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		496B3EA5258F23D600F68D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		496B3EA8258F23D600F68D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496B3EAA258F23D600F68D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5367970C999460DE78CA74FF /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.debug.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC92D11F12C7FBECF13BB57A /* Pods_Rokaru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				496B3E98258F23D600F68D2D /* Rokaru */,
 				496B3E97258F23D600F68D2D /* Products */,
+				76D219287D24B9BE76418A57 /* Pods */,
+				7B27F0D1CC70F7CF8CDFDE51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = Rokaru;
 			sourceTree = "<group>";
 		};
+		76D219287D24B9BE76418A57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5367970C999460DE78CA74FF /* Pods-Rokaru.debug.xcconfig */,
+				05F21395FADDF9CB4E218835 /* Pods-Rokaru.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B27F0D1CC70F7CF8CDFDE51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E26CE6D53F4BEA42FECF71C /* Pods_Rokaru.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 496B3EAD258F23D600F68D2D /* Build configuration list for PBXNativeTarget "Rokaru" */;
 			buildPhases = (
+				C5260CC456AA876852EE50A8 /* [CP] Check Pods Manifest.lock */,
 				496B3E92258F23D600F68D2D /* Sources */,
 				496B3E93258F23D600F68D2D /* Frameworks */,
 				496B3E94258F23D600F68D2D /* Resources */,
@@ -134,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5260CC456AA876852EE50A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rokaru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		496B3E92258F23D600F68D2D /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		496B3EAE258F23D600F68D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5367970C999460DE78CA74FF /* Pods-Rokaru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +357,7 @@
 		};
 		496B3EAF258F23D600F68D2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F21395FADDF9CB4E218835 /* Pods-Rokaru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
