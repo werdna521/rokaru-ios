@@ -395,7 +395,7 @@
             <objects>
                 <viewController id="IAk-kL-B1q" customClass="TicketViewController" customModule="Rokaru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snl-0g-Hbt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rokaru" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-K4-3gX">
@@ -429,6 +429,7 @@
                             <constraint firstItem="oag-4C-Eiu" firstAttribute="trailing" secondItem="iZv-bh-K1L" secondAttribute="trailing" constant="30" id="UzV-wn-WnW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TF7-jV-4lb"/>
                     <connections>
                         <outlet property="_ticket" destination="9uv-cf-gZh" id="GiB-Ah-rWg"/>
                     </connections>
@@ -466,6 +467,51 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="yID-92-vbY"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBarang" rowHeight="145" id="AEF-g4-FCd" customClass="BarangTableViewCell" customModule="Rokaru" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AEF-g4-FCd" id="pQe-Lu-qFv">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y97-Dd-VB6">
+                                                    <rect key="frame" x="5" y="5" width="100" height="135"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="7vs-QC-2Oa"/>
+                                                        <constraint firstAttribute="height" constant="100" id="xdA-5d-6Tx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasi Goreng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-Rl-v3e">
+                                                    <rect key="frame" x="115" y="21" width="97.666666666666686" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp25.000 x 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm0-uR-FvU">
+                                                    <rect key="frame" x="115" y="50" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jm0-uR-FvU" firstAttribute="leading" secondItem="y97-Dd-VB6" secondAttribute="trailing" constant="10" id="0Cw-fM-iib"/>
+                                                <constraint firstItem="hpG-Rl-v3e" firstAttribute="top" secondItem="pQe-Lu-qFv" secondAttribute="topMargin" constant="10" id="1Uy-JM-toU"/>
+                                                <constraint firstItem="Jm0-uR-FvU" firstAttribute="top" secondItem="hpG-Rl-v3e" secondAttribute="bottom" constant="8" symbolic="YES" id="967-8v-l4B"/>
+                                                <constraint firstAttribute="bottom" secondItem="y97-Dd-VB6" secondAttribute="bottom" constant="5" id="L4m-t4-2l0"/>
+                                                <constraint firstItem="y97-Dd-VB6" firstAttribute="top" secondItem="pQe-Lu-qFv" secondAttribute="top" constant="5" id="jnj-DO-9iX"/>
+                                                <constraint firstItem="y97-Dd-VB6" firstAttribute="leading" secondItem="pQe-Lu-qFv" secondAttribute="leading" constant="5" id="x0h-8C-oXu"/>
+                                                <constraint firstItem="hpG-Rl-v3e" firstAttribute="leading" secondItem="y97-Dd-VB6" secondAttribute="trailing" constant="10" id="zwM-AU-ZSn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="_barangImage" destination="y97-Dd-VB6" id="4xl-Rz-znk"/>
+                                            <outlet property="_barangName" destination="hpG-Rl-v3e" id="uM9-0K-Tz9"/>
+                                            <outlet property="_barangPrice" destination="Jm0-uR-FvU" id="kqy-Vb-XkF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengiriman:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4e-MK-QL0">
                                 <rect key="frame" x="29.999999999999993" y="516" width="76.333333333333314" height="17"/>
@@ -518,10 +564,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A0K-nP-Lnc"/>
+                    <connections>
+                        <outlet property="_buttonBayar" destination="Zg4-jG-Hr4" id="zAG-dO-09G"/>
+                        <outlet property="_tableview" destination="dKT-3W-eF3" id="7ar-rx-WZg"/>
+                        <segue destination="IAk-kL-B1q" kind="show" identifier="gotoBayar" id="GrR-bL-odG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYW-n3-CAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="848"/>
+            <point key="canvasLocation" x="563.768115942029" y="847.82608695652175"/>
         </scene>
     </scenes>
     <designables>

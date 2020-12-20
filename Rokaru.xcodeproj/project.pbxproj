@@ -23,6 +23,7 @@
 		49B42499258FCFD6006136B8 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B42498258FCFD6006136B8 /* Ticket.swift */; };
 		49B4249C258FD2BD006136B8 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4249B258FD2BD006136B8 /* TicketViewController.swift */; };
 		507EA03D258FE86400E05EEA /* DetailBelanjaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EA03C258FE86400E05EEA /* DetailBelanjaViewController.swift */; };
+		507EA040258FEC4400E05EEA /* BarangTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EA03F258FEC4400E05EEA /* BarangTableViewCell.swift */; };
 		E91AFE455393A7793E6C7B49 /* Pods_Rokaru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		49B42498258FCFD6006136B8 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		49B4249B258FD2BD006136B8 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		507EA03C258FE86400E05EEA /* DetailBelanjaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBelanjaViewController.swift; sourceTree = "<group>"; };
+		507EA03F258FEC4400E05EEA /* BarangTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarangTableViewCell.swift; sourceTree = "<group>"; };
 		995F87B19068667EAFA36E15 /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.debug.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
 		D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokaru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				49B42498258FCFD6006136B8 /* Ticket.swift */,
 				49B4249B258FD2BD006136B8 /* TicketViewController.swift */,
 				507EA03C258FE86400E05EEA /* DetailBelanjaViewController.swift */,
+				507EA03F258FEC4400E05EEA /* BarangTableViewCell.swift */,
 			);
 			path = Rokaru;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				49B42478258F9FF6006136B8 /* Materialize.swift in Sources */,
 				496B3E9E258F23D600F68D2D /* ViewController.swift in Sources */,
+				507EA040258FEC4400E05EEA /* BarangTableViewCell.swift in Sources */,
 				496B3E9A258F23D600F68D2D /* AppDelegate.swift in Sources */,
 				493EBA34258F7649005F6919 /* ShopViewController.swift in Sources */,
 				49B42499258FCFD6006136B8 /* Ticket.swift in Sources */,
