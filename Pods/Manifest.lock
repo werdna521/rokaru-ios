@@ -32,6 +32,14 @@ PODS:
   - "MaterialComponents/Buttons+TypographyThemer (119.3.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Typography
+  - MaterialComponents/Cards (119.3.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
   - MaterialComponents/Elevation (119.3.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
@@ -43,6 +51,9 @@ PODS:
   - MaterialComponents/private/Application (119.3.0)
   - MaterialComponents/private/Color (119.3.0):
     - MaterialComponents/Availability
+  - MaterialComponents/private/Icons/Base (119.3.0)
+  - MaterialComponents/private/Icons/ic_check_circle (119.3.0):
+    - MaterialComponents/private/Icons/Base
   - MaterialComponents/private/Math (119.3.0)
   - MaterialComponents/Ripple (119.3.0):
     - MaterialComponents/AnimationTiming
@@ -89,6 +100,7 @@ DEPENDENCIES:
   - Koloda
   - MaterialComponents/Buttons
   - "MaterialComponents/Buttons+Theming"
+  - MaterialComponents/Cards
   - TORoundedButton
 
 SPEC REPOS:
@@ -110,6 +122,6 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   TORoundedButton: 96001eec63bb1705e38aa6e3eae415024f544309
 
-PODFILE CHECKSUM: c00ee6a898ad2e52f2b12da6d95bc0249b9ec00b
+PODFILE CHECKSUM: ebedd39e3026c6c7c488ba6e1ec4a82063f68014
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
