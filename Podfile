@@ -9,4 +9,6 @@ target 'Rokaru' do
   pod 'MaterialComponents/Buttons'
   pod 'Koloda'
   pod 'TORoundedButton'
+  pod 'Cosmos'
+  pod 'MaterialComponents/Buttons+Theming'
 end

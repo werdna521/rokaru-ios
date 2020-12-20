@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Rokaru/Pods-Rokaru-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
 ${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework
 ${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
 ${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework
