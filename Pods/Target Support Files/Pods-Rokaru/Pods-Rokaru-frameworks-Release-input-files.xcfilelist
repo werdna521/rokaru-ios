@@ -4,5 +4,6 @@ ${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework
 ${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
 ${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework
 ${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
+${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework
 ${BUILT_PRODUCTS_DIR}/TORoundedButton/TORoundedButton.framework
 ${BUILT_PRODUCTS_DIR}/pop/pop.framework

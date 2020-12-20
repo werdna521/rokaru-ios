@@ -12,4 +12,5 @@ target 'Rokaru' do
   pod 'Cosmos'
   pod 'MaterialComponents/Buttons+Theming'
   pod 'MaterialComponents/Cards'
+  pod 'QRCode'
 end
