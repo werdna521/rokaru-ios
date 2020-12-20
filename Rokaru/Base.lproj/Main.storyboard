@@ -341,12 +341,12 @@
                                 <state key="normal" image="heart" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-L8-xSa" customClass="MDCButton">
-                                <rect key="frame" x="104.5" y="758" width="205" height="34"/>
+                                <rect key="frame" x="104.66666666666669" y="666" width="205" height="34"/>
                                 <color key="tintColor" red="0.89411764705882346" green="0.71372549019607845" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Tambahkan ke Keranjang"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyl-mP-Ow2" customClass="MDCButton">
-                                <rect key="frame" x="150" y="720" width="114" height="30"/>
+                                <rect key="frame" x="150" y="628" width="114" height="30"/>
                                 <color key="tintColor" red="0.42352941176470588" green="0.75686274509803919" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Pesan Sekarang"/>
                             </button>
@@ -385,7 +385,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohK-Vt-hWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084.057971014493" y="115.84821428571428"/>
+            <point key="canvasLocation" x="2084.057971014493" y="115.7608695652174"/>
+        </scene>
+        <!--Ticket View Controller-->
+        <scene sceneID="dia-wW-rMB">
+            <objects>
+                <viewController id="IAk-kL-B1q" customClass="TicketViewController" customModule="Rokaru" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="snl-0g-Hbt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rokaru" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-K4-3gX">
+                                <rect key="frame" x="157" y="32" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="S7v-Lq-daY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiket-mamang" translatesAutoresizingMaskIntoConstraints="NO" id="iZv-bh-K1L">
+                                <rect key="frame" x="30" y="89" width="354" height="117"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uv-cf-gZh" customClass="Ticket" customModule="Rokaru" customModuleProvider="target">
+                                <rect key="frame" x="40" y="238" width="334" height="380"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="lgM-9u-c2e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oag-4C-Eiu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oag-4C-Eiu" firstAttribute="trailing" secondItem="9uv-cf-gZh" secondAttribute="trailing" constant="40" id="1yS-d9-0ds"/>
+                            <constraint firstItem="9uv-cf-gZh" firstAttribute="leading" secondItem="oag-4C-Eiu" secondAttribute="leading" constant="40" id="AoP-Ag-vQT"/>
+                            <constraint firstItem="iZv-bh-K1L" firstAttribute="top" secondItem="Kqd-K4-3gX" secondAttribute="bottom" constant="32" id="BdF-ti-z96"/>
+                            <constraint firstItem="9uv-cf-gZh" firstAttribute="top" secondItem="iZv-bh-K1L" secondAttribute="bottom" constant="32" id="CiB-td-3Ga"/>
+                            <constraint firstItem="Kqd-K4-3gX" firstAttribute="top" secondItem="oag-4C-Eiu" secondAttribute="top" constant="32" id="GWJ-Po-a8r"/>
+                            <constraint firstItem="Kqd-K4-3gX" firstAttribute="centerX" secondItem="snl-0g-Hbt" secondAttribute="centerX" id="J6N-23-dF1"/>
+                            <constraint firstItem="9uv-cf-gZh" firstAttribute="centerX" secondItem="snl-0g-Hbt" secondAttribute="centerX" id="QIO-ZW-wfZ"/>
+                            <constraint firstItem="iZv-bh-K1L" firstAttribute="leading" secondItem="oag-4C-Eiu" secondAttribute="leading" constant="30" id="Qc8-Wa-2b9"/>
+                            <constraint firstItem="oag-4C-Eiu" firstAttribute="trailing" secondItem="iZv-bh-K1L" secondAttribute="trailing" constant="30" id="UzV-wn-WnW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_ticket" destination="9uv-cf-gZh" id="GiB-Ah-rWg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7A-Rv-Heq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3565" y="116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hke-0b-woR">
@@ -493,6 +540,7 @@
         <image name="rokaru" width="103" height="25"/>
         <image name="shop" width="1280" height="622"/>
         <image name="star" width="25" height="25"/>
+        <image name="tiket-mamang" width="352" height="117"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
