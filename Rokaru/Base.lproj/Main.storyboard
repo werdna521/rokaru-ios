@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mWU-UF-nK2">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -345,26 +345,36 @@
                                 <color key="tintColor" red="0.89411764705882346" green="0.71372549019607845" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Tambahkan ke Keranjang"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyl-mP-Ow2" customClass="MDCButton">
-                                <rect key="frame" x="150" y="628" width="114" height="30"/>
-                                <color key="tintColor" red="0.42352941176470588" green="0.75686274509803919" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title=" Pesan Sekarang"/>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-wh-NvS" customClass="TORoundedButton">
+                                <rect key="frame" x="20" y="646" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.95003205540000002" green="0.79438549280000004" blue="0.45170998569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UsJ-P0-toz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Pesan Sekarang"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X8k-M4-JA4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bmS-Ti-npb" firstAttribute="top" secondItem="xM0-xV-S4m" secondAttribute="bottom" constant="8" id="4LU-7N-NIM"/>
                             <constraint firstItem="Neq-Yf-572" firstAttribute="centerX" secondItem="4eL-CW-UUa" secondAttribute="centerX" id="600-Ut-dw9"/>
+                            <constraint firstItem="Brt-wh-NvS" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="20" id="6yW-aR-Has"/>
                             <constraint firstItem="3nL-Ed-CZR" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="ETt-1T-Agn"/>
                             <constraint firstItem="vZg-nw-w5S" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="HCm-Bn-qL7"/>
+                            <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="Brt-wh-NvS" secondAttribute="trailing" constant="20" id="ICr-Hw-uBW"/>
                             <constraint firstItem="Kxt-L8-xSa" firstAttribute="centerX" secondItem="4eL-CW-UUa" secondAttribute="centerX" id="JKs-LX-YQJ"/>
-                            <constraint firstItem="Kxt-L8-xSa" firstAttribute="top" secondItem="Qyl-mP-Ow2" secondAttribute="bottom" constant="8" id="RbZ-8Y-TA3"/>
+                            <constraint firstItem="X8k-M4-JA4" firstAttribute="bottom" secondItem="Brt-wh-NvS" secondAttribute="bottom" constant="20" id="SVE-cf-y1C"/>
                             <constraint firstItem="bmS-Ti-npb" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="Sqe-cc-AdX"/>
                             <constraint firstItem="xM0-xV-S4m" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="UVz-k3-zqX"/>
                             <constraint firstItem="xM0-xV-S4m" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="VDt-ul-BdY"/>
                             <constraint firstItem="Neq-Yf-572" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="32" id="VJB-LM-ABM"/>
-                            <constraint firstItem="Qyl-mP-Ow2" firstAttribute="centerX" secondItem="4eL-CW-UUa" secondAttribute="centerX" id="VRA-w1-jVA"/>
                             <constraint firstItem="X8k-M4-JA4" firstAttribute="bottom" secondItem="Kxt-L8-xSa" secondAttribute="bottom" constant="16" id="aI1-h8-Ikt"/>
                             <constraint firstItem="xL4-mc-TPA" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="34" id="bfr-2U-auE"/>
                             <constraint firstItem="vZg-nw-w5S" firstAttribute="top" secondItem="bmS-Ti-npb" secondAttribute="bottom" constant="8" id="hTA-i0-N8b"/>
@@ -380,7 +390,6 @@
                     <connections>
                         <outlet property="_addToCartButton" destination="Kxt-L8-xSa" id="jiw-Qg-Zv5"/>
                         <outlet property="_favoriteButton" destination="3nL-Ed-CZR" id="PEa-Oi-RSL"/>
-                        <outlet property="_orderButton" destination="Qyl-mP-Ow2" id="lG9-Pu-hu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohK-Vt-hWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
