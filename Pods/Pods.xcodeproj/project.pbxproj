@@ -7,51 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35FF75E31D3C7532CC6207DB4CAFA5B0 /* Pods-Rokaru-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 399021C519580769F8E5FF9A7B48F228 /* Pods-Rokaru-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82DF98AAC482A59364F475BAACA363D6 /* Pods-Rokaru-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D5C407C6E73C316B560169B6EF461 /* Pods-Rokaru-dummy.m */; };
-		CCE2C4BFA63979551E632BF635F665A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		225D5EDA9AC187D9B52F1F8755F3A23E /* TORoundedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BFFF0EF8C4146F75509EFA61D768A15 /* TORoundedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		417C8D5C2F2B4FA74777545817559923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A1A73B2EA75C8BB402C126067C7605A2 /* TORoundedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B199059314196FEB0B4E5F1394BBB1 /* TORoundedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF3C1418B15950F898B9F820174139E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C3938F2858775A905C2EA29DFD701CC7 /* TORoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 938A88FDE960E15CABB0783B2A05D9FE /* TORoundedButton.m */; };
+		CB246B9CE086727489890B05842454FA /* Pods-Rokaru-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7BD535A0C5820E698FF98DC5CB6724D /* Pods-Rokaru-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1520E4859CC9BAB1D0011D64FB7BA1C /* TORoundedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B8C20F5EEEEFFE890C2BDEB6277FF5 /* TORoundedButton-dummy.m */; };
+		E6A1D72B3BF0069ABCB36949150BA7BC /* Pods-Rokaru-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEACAE228C4FFD89F8FB016A230E6D /* Pods-Rokaru-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D554241E97AEC25229E14D2E46E5CA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6017893E50DE7FF7D310F8DBABBECE5A;
+			remoteInfo = TORoundedButton;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		399021C519580769F8E5FF9A7B48F228 /* Pods-Rokaru-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rokaru-umbrella.h"; sourceTree = "<group>"; };
+		02FE8DE0B35715C3CACEFF910E185785 /* TORoundedButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TORoundedButton.debug.xcconfig; sourceTree = "<group>"; };
+		06B783EDDFF48CC4BE3FE7329B179C43 /* Pods-Rokaru-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rokaru-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13B8C20F5EEEEFFE890C2BDEB6277FF5 /* TORoundedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TORoundedButton-dummy.m"; sourceTree = "<group>"; };
+		28ED355A4083A2626D70343FFF29884A /* TORoundedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TORoundedButton.modulemap; sourceTree = "<group>"; };
+		462906F0D86C20FB85D55CD928830B45 /* Pods-Rokaru.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rokaru.modulemap"; sourceTree = "<group>"; };
 		50AD85A62C02B53DC43D2A7E3E19B76F /* Pods_Rokaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rokaru.framework; path = "Pods-Rokaru.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AAE1F46AEA16D2CC852825D1A7B23CF /* Pods-Rokaru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rokaru.release.xcconfig"; sourceTree = "<group>"; };
+		54541F3849F574EDECEC5D243560650F /* Pods-Rokaru-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rokaru-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BFFF0EF8C4146F75509EFA61D768A15 /* TORoundedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TORoundedButton-umbrella.h"; sourceTree = "<group>"; };
+		5ECEACAE228C4FFD89F8FB016A230E6D /* Pods-Rokaru-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rokaru-dummy.m"; sourceTree = "<group>"; };
+		6F6B00E7010F9658D0B4D1A82316198E /* Pods-Rokaru-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rokaru-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		87241372CFE51C102E62B0547866205A /* Pods-Rokaru-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rokaru-acknowledgements.markdown"; sourceTree = "<group>"; };
-		952D5C407C6E73C316B560169B6EF461 /* Pods-Rokaru-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rokaru-dummy.m"; sourceTree = "<group>"; };
+		74B97BB546FF2AF0BD95F1054AA00994 /* Pods-Rokaru-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rokaru-frameworks.sh"; sourceTree = "<group>"; };
+		7D384BEB349C58FBC9631369AE0918AF /* Pods-Rokaru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rokaru.release.xcconfig"; sourceTree = "<group>"; };
+		88B199059314196FEB0B4E5F1394BBB1 /* TORoundedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORoundedButton.h; path = TORoundedButton/TORoundedButton.h; sourceTree = "<group>"; };
+		938A88FDE960E15CABB0783B2A05D9FE /* TORoundedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORoundedButton.m; path = TORoundedButton/TORoundedButton.m; sourceTree = "<group>"; };
+		986CB288900F071716CC1369573F6AA3 /* TORoundedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TORoundedButton-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A6FB783774BA42E8987286220E414597 /* Pods-Rokaru-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rokaru-Info.plist"; sourceTree = "<group>"; };
-		BF1C771679026D35138BD392F961EA14 /* Pods-Rokaru.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rokaru.modulemap"; sourceTree = "<group>"; };
-		C4DCC75221D15AF772A76B83A3D7E42F /* Pods-Rokaru-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rokaru-acknowledgements.plist"; sourceTree = "<group>"; };
-		F9E61E940221733608296C5BF71DFD93 /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6DD4BE9BA2B713E4E1D3580C15882F /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
+		D21979ED490719FDCAC43FFC50A5C7A4 /* TORoundedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TORoundedButton-Info.plist"; sourceTree = "<group>"; };
+		D38A79704320E1ED7E2506F627568D6D /* TORoundedButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TORoundedButton.release.xcconfig; sourceTree = "<group>"; };
+		E7BD535A0C5820E698FF98DC5CB6724D /* Pods-Rokaru-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rokaru-umbrella.h"; sourceTree = "<group>"; };
+		E9CA039CADB1CA30BBE14800FEEFD745 /* TORoundedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TORoundedButton.framework; path = TORoundedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E2C72F6938D8CE9493099573FB9941D4 /* Frameworks */ = {
+		6B62E270519A7EEDFC9306D934D3273A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE2C4BFA63979551E632BF635F665A9 /* Foundation.framework in Frameworks */,
+				AF3C1418B15950F898B9F820174139E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12F7D644F4DE5DAD58B3B44A4CD3824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417C8D5C2F2B4FA74777545817559923 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4690466345702BA60EBCBEA23E3BACD3 /* Pods-Rokaru */ = {
+		2F8DCA09D02CFCED43BE189C61A4899D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF1C771679026D35138BD392F961EA14 /* Pods-Rokaru.modulemap */,
-				87241372CFE51C102E62B0547866205A /* Pods-Rokaru-acknowledgements.markdown */,
-				C4DCC75221D15AF772A76B83A3D7E42F /* Pods-Rokaru-acknowledgements.plist */,
-				952D5C407C6E73C316B560169B6EF461 /* Pods-Rokaru-dummy.m */,
-				A6FB783774BA42E8987286220E414597 /* Pods-Rokaru-Info.plist */,
-				399021C519580769F8E5FF9A7B48F228 /* Pods-Rokaru-umbrella.h */,
-				F9E61E940221733608296C5BF71DFD93 /* Pods-Rokaru.debug.xcconfig */,
-				5AAE1F46AEA16D2CC852825D1A7B23CF /* Pods-Rokaru.release.xcconfig */,
+				7FD52819646C65B3B3530FBBFAE7AD45 /* Pods-Rokaru */,
 			);
-			name = "Pods-Rokaru";
-			path = "Target Support Files/Pods-Rokaru";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2FD732DA984425AAC33A929B8AE5B0C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1E7DF953029166B32439488A104C2 /* TORoundedButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F500BCA07E19181220D8A5C6E0E8D1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28ED355A4083A2626D70343FFF29884A /* TORoundedButton.modulemap */,
+				13B8C20F5EEEEFFE890C2BDEB6277FF5 /* TORoundedButton-dummy.m */,
+				D21979ED490719FDCAC43FFC50A5C7A4 /* TORoundedButton-Info.plist */,
+				986CB288900F071716CC1369573F6AA3 /* TORoundedButton-prefix.pch */,
+				5BFFF0EF8C4146F75509EFA61D768A15 /* TORoundedButton-umbrella.h */,
+				02FE8DE0B35715C3CACEFF910E185785 /* TORoundedButton.debug.xcconfig */,
+				D38A79704320E1ED7E2506F627568D6D /* TORoundedButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TORoundedButton";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -62,12 +111,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A27DA22FC04C2C6641BB9343E8206673 /* Targets Support Files */ = {
+		6DD1E7DF953029166B32439488A104C2 /* TORoundedButton */ = {
 			isa = PBXGroup;
 			children = (
-				4690466345702BA60EBCBEA23E3BACD3 /* Pods-Rokaru */,
+				88B199059314196FEB0B4E5F1394BBB1 /* TORoundedButton.h */,
+				938A88FDE960E15CABB0783B2A05D9FE /* TORoundedButton.m */,
+				3F500BCA07E19181220D8A5C6E0E8D1B /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = TORoundedButton;
+			path = TORoundedButton;
+			sourceTree = "<group>";
+		};
+		7FD52819646C65B3B3530FBBFAE7AD45 /* Pods-Rokaru */ = {
+			isa = PBXGroup;
+			children = (
+				462906F0D86C20FB85D55CD928830B45 /* Pods-Rokaru.modulemap */,
+				06B783EDDFF48CC4BE3FE7329B179C43 /* Pods-Rokaru-acknowledgements.markdown */,
+				54541F3849F574EDECEC5D243560650F /* Pods-Rokaru-acknowledgements.plist */,
+				5ECEACAE228C4FFD89F8FB016A230E6D /* Pods-Rokaru-dummy.m */,
+				74B97BB546FF2AF0BD95F1054AA00994 /* Pods-Rokaru-frameworks.sh */,
+				6F6B00E7010F9658D0B4D1A82316198E /* Pods-Rokaru-Info.plist */,
+				E7BD535A0C5820E698FF98DC5CB6724D /* Pods-Rokaru-umbrella.h */,
+				9F6DD4BE9BA2B713E4E1D3580C15882F /* Pods-Rokaru.debug.xcconfig */,
+				7D384BEB349C58FBC9631369AE0918AF /* Pods-Rokaru.release.xcconfig */,
+			);
+			name = "Pods-Rokaru";
+			path = "Target Support Files/Pods-Rokaru";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -75,8 +144,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F1463E31782CBCFD519A52D8DBA4793E /* Products */,
-				A27DA22FC04C2C6641BB9343E8206673 /* Targets Support Files */,
+				2FD732DA984425AAC33A929B8AE5B0C2 /* Pods */,
+				E7E67DC287EC8EEF287AD850F16DB706 /* Products */,
+				2F8DCA09D02CFCED43BE189C61A4899D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,10 +158,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F1463E31782CBCFD519A52D8DBA4793E /* Products */ = {
+		E7E67DC287EC8EEF287AD850F16DB706 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				50AD85A62C02B53DC43D2A7E3E19B76F /* Pods_Rokaru.framework */,
+				E9CA039CADB1CA30BBE14800FEEFD745 /* TORoundedButton.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,29 +170,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		87E145A284B4B0A8BCE9B4367693D07B /* Headers */ = {
+		542CC28171EA183E92215FEF5976E168 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FF75E31D3C7532CC6207DB4CAFA5B0 /* Pods-Rokaru-umbrella.h in Headers */,
+				CB246B9CE086727489890B05842454FA /* Pods-Rokaru-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9836316E67A459E38B541567A1A2B0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225D5EDA9AC187D9B52F1F8755F3A23E /* TORoundedButton-umbrella.h in Headers */,
+				A1A73B2EA75C8BB402C126067C7605A2 /* TORoundedButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		97E4B69DF3271BDAE923DEF1278864F1 /* Pods-Rokaru */ = {
+		6017893E50DE7FF7D310F8DBABBECE5A /* TORoundedButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0304DD83A86F5CE49D10947451AD6531 /* Build configuration list for PBXNativeTarget "Pods-Rokaru" */;
+			buildConfigurationList = 9BBC70517BFDFBBFF824FEFD808C0AA4 /* Build configuration list for PBXNativeTarget "TORoundedButton" */;
 			buildPhases = (
-				87E145A284B4B0A8BCE9B4367693D07B /* Headers */,
-				D15D7AB5D7D734BF90356A28BB515F4D /* Sources */,
-				E2C72F6938D8CE9493099573FB9941D4 /* Frameworks */,
-				3AE9DF58380FA16D7CCF4122FD4FFFB5 /* Resources */,
+				B9836316E67A459E38B541567A1A2B0A /* Headers */,
+				7A4EBAF371EBEACE37567A2183F05B51 /* Sources */,
+				C12F7D644F4DE5DAD58B3B44A4CD3824 /* Frameworks */,
+				95EBA53D27ABE5016A7048C85735A306 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = TORoundedButton;
+			productName = TORoundedButton;
+			productReference = E9CA039CADB1CA30BBE14800FEEFD745 /* TORoundedButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97E4B69DF3271BDAE923DEF1278864F1 /* Pods-Rokaru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB90BC6F4EBD7372141B20BB8DBAE365 /* Build configuration list for PBXNativeTarget "Pods-Rokaru" */;
+			buildPhases = (
+				542CC28171EA183E92215FEF5976E168 /* Headers */,
+				8D04BE029CC2DE390413297943227985 /* Sources */,
+				6B62E270519A7EEDFC9306D934D3273A /* Frameworks */,
+				B5C2926CCC8A9C300A5A148A8C906450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33F2FBB90F4104AC493C28FF4F9A9CC /* PBXTargetDependency */,
 			);
 			name = "Pods-Rokaru";
 			productName = "Pods-Rokaru";
@@ -146,17 +245,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F1463E31782CBCFD519A52D8DBA4793E /* Products */;
+			productRefGroup = E7E67DC287EC8EEF287AD850F16DB706 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				97E4B69DF3271BDAE923DEF1278864F1 /* Pods-Rokaru */,
+				6017893E50DE7FF7D310F8DBABBECE5A /* TORoundedButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3AE9DF58380FA16D7CCF4122FD4FFFB5 /* Resources */ = {
+		95EBA53D27ABE5016A7048C85735A306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C2926CCC8A9C300A5A148A8C906450 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,17 +273,73 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D15D7AB5D7D734BF90356A28BB515F4D /* Sources */ = {
+		7A4EBAF371EBEACE37567A2183F05B51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82DF98AAC482A59364F475BAACA363D6 /* Pods-Rokaru-dummy.m in Sources */,
+				D1520E4859CC9BAB1D0011D64FB7BA1C /* TORoundedButton-dummy.m in Sources */,
+				C3938F2858775A905C2EA29DFD701CC7 /* TORoundedButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D04BE029CC2DE390413297943227985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A1D72B3BF0069ABCB36949150BA7BC /* Pods-Rokaru-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A33F2FBB90F4104AC493C28FF4F9A9CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TORoundedButton;
+			target = 6017893E50DE7FF7D310F8DBABBECE5A /* TORoundedButton */;
+			targetProxy = D554241E97AEC25229E14D2E46E5CA23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		059BEB4006EFB5B31EDDEB31DE44FE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D384BEB349C58FBC9631369AE0918AF /* Pods-Rokaru.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rokaru/Pods-Rokaru-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rokaru/Pods-Rokaru.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,9 +406,9 @@
 			};
 			name = Debug;
 		};
-		7A5F026B7F19EB65B1E0DAAF8A08065B /* Debug */ = {
+		430FAA458D0DB96DA1758A39953C3D5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9E61E940221733608296C5BF71DFD93 /* Pods-Rokaru.debug.xcconfig */;
+			baseConfigurationReference = 9F6DD4BE9BA2B713E4E1D3580C15882F /* Pods-Rokaru.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -342,11 +505,10 @@
 			};
 			name = Release;
 		};
-		D3E712502441FEEB4178B3C8BA482316 /* Release */ = {
+		CCEDC7C8BB2C616F6EFE71307A5C9A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AAE1F46AEA16D2CC852825D1A7B23CF /* Pods-Rokaru.release.xcconfig */;
+			baseConfigurationReference = 02FE8DE0B35715C3CACEFF910E185785 /* TORoundedButton.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -356,23 +518,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rokaru/Pods-Rokaru-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TORoundedButton/TORoundedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TORoundedButton/TORoundedButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rokaru/Pods-Rokaru.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TORoundedButton/TORoundedButton.modulemap";
+				PRODUCT_MODULE_NAME = TORoundedButton;
+				PRODUCT_NAME = TORoundedButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5AFEC17A624ACC0E0670E2A793BFFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38A79704320E1ED7E2506F627568D6D /* TORoundedButton.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TORoundedButton/TORoundedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TORoundedButton/TORoundedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TORoundedButton/TORoundedButton.modulemap";
+				PRODUCT_MODULE_NAME = TORoundedButton;
+				PRODUCT_NAME = TORoundedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -383,20 +579,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0304DD83A86F5CE49D10947451AD6531 /* Build configuration list for PBXNativeTarget "Pods-Rokaru" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7A5F026B7F19EB65B1E0DAAF8A08065B /* Debug */,
-				D3E712502441FEEB4178B3C8BA482316 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
 				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BBC70517BFDFBBFF824FEFD808C0AA4 /* Build configuration list for PBXNativeTarget "TORoundedButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEDC7C8BB2C616F6EFE71307A5C9A00 /* Debug */,
+				F5AFEC17A624ACC0E0670E2A793BFFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB90BC6F4EBD7372141B20BB8DBAE365 /* Build configuration list for PBXNativeTarget "Pods-Rokaru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430FAA458D0DB96DA1758A39953C3D5D /* Debug */,
+				059BEB4006EFB5B31EDDEB31DE44FE21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

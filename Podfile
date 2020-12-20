@@ -6,5 +6,6 @@ target 'Rokaru' do
   use_frameworks!
 
   # Pods for Rokaru
+  pod 'TORoundedButton', '~> 1.1'
 
 end
