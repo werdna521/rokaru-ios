@@ -1,0 +1,115 @@
+PODS:
+  - Cosmos (23.0.0)
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - MaterialComponents/AnimationTiming (119.3.0)
+  - MaterialComponents/Availability (119.3.0)
+  - MaterialComponents/Buttons (119.3.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - "MaterialComponents/Buttons+ColorThemer (119.3.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/Buttons+ShapeThemer (119.3.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Shape
+  - "MaterialComponents/Buttons+Theming (119.3.0)":
+    - MaterialComponents/Buttons
+    - "MaterialComponents/Buttons+ColorThemer"
+    - "MaterialComponents/Buttons+ShapeThemer"
+    - "MaterialComponents/Buttons+TypographyThemer"
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Buttons+TypographyThemer (119.3.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/Elevation (119.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (119.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (119.3.0)
+  - MaterialComponents/private/Color (119.3.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (119.3.0)
+  - MaterialComponents/Ripple (119.3.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/schemes/Color (119.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+  - MaterialComponents/schemes/Container (119.3.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Shape
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/schemes/Shape (119.3.0):
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/schemes/Typography (119.3.0):
+    - "MaterialComponents/schemes/Typography+BasicFontScheme"
+    - "MaterialComponents/schemes/Typography+Scheming"
+    - MaterialComponents/Typography
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (119.3.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (119.3.0)"
+  - MaterialComponents/ShadowElevations (119.3.0)
+  - MaterialComponents/ShadowLayer (119.3.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (119.3.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (119.3.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Typography (119.3.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - pop (1.0.12)
+  - TORoundedButton (1.1.3)
+
+DEPENDENCIES:
+  - Cosmos
+  - Koloda
+  - MaterialComponents/Buttons
+  - "MaterialComponents/Buttons+Theming"
+  - TORoundedButton
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - Koloda
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - pop
+    - TORoundedButton
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  MaterialComponents: 49658f0fd7ef6e098e9943fce3f293e700595570
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  TORoundedButton: 96001eec63bb1705e38aa6e3eae415024f544309
+
+PODFILE CHECKSUM: c00ee6a898ad2e52f2b12da6d95bc0249b9ec00b
+
+COCOAPODS: 1.9.3

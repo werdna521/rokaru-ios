@@ -1,0 +1,6 @@
+framework module Pods_Rokaru {
+  umbrella header "Pods-Rokaru-umbrella.h"
+
+  export *
+  module * { export * }
+}

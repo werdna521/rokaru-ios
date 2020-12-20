@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NgeryCard" customModule="Rokaru" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="5ov-kG-20K" id="JJh-Nh-FeG"/>
+                <outlet property="imageView" destination="Hb0-Fm-PWU" id="MF2-Xo-oxO"/>
+                <outlet property="subtitleLabel" destination="XfY-2X-4pm" id="gxo-Yh-jov"/>
+                <outlet property="titleLabel" destination="YOY-yT-iww" id="wUx-Sa-IFi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5ov-kG-20K">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasi-goreng" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-Fm-PWU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfY-2X-4pm">
+                    <rect key="frame" x="24" y="821" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasi Goreng Pinsen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOY-yT-iww">
+                    <rect key="frame" x="24" y="788" width="218" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g3p-WQ-t87"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XfY-2X-4pm" firstAttribute="top" secondItem="YOY-yT-iww" secondAttribute="bottom" constant="4" id="K6K-pq-HVh"/>
+                <constraint firstItem="Hb0-Fm-PWU" firstAttribute="leading" secondItem="g3p-WQ-t87" secondAttribute="leading" id="NGW-8H-dUL"/>
+                <constraint firstItem="g3p-WQ-t87" firstAttribute="bottom" secondItem="XfY-2X-4pm" secondAttribute="bottom" constant="24" id="NzA-Bx-div"/>
+                <constraint firstItem="g3p-WQ-t87" firstAttribute="bottom" secondItem="Hb0-Fm-PWU" secondAttribute="bottom" id="Tb4-EC-LKN"/>
+                <constraint firstItem="YOY-yT-iww" firstAttribute="leading" secondItem="g3p-WQ-t87" secondAttribute="leading" constant="24" id="f8l-BP-BRZ"/>
+                <constraint firstItem="Hb0-Fm-PWU" firstAttribute="top" secondItem="g3p-WQ-t87" secondAttribute="top" id="fch-iW-SDj"/>
+                <constraint firstItem="g3p-WQ-t87" firstAttribute="trailing" secondItem="Hb0-Fm-PWU" secondAttribute="trailing" id="l9F-N4-mG8"/>
+                <constraint firstItem="XfY-2X-4pm" firstAttribute="leading" secondItem="g3p-WQ-t87" secondAttribute="leading" constant="24" id="vC2-0j-vem"/>
+            </constraints>
+            <point key="canvasLocation" x="-108" y="-14"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nasi-goreng" width="550" height="413"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
