@@ -39,6 +39,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QRCode.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftHTTP.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TORoundedButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
