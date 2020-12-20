@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493EBA1B258F5969005F6919 /* NgeryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493EBA1A258F5969005F6919 /* NgeryCard.swift */; };
+		493EBA1F258F5A50005F6919 /* NgeryCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493EBA1E258F5A50005F6919 /* NgeryCard.xib */; };
 		496B3E9A258F23D600F68D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3E99258F23D600F68D2D /* AppDelegate.swift */; };
 		496B3E9C258F23D600F68D2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3E9B258F23D600F68D2D /* SceneDelegate.swift */; };
 		496B3E9E258F23D600F68D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3E9D258F23D600F68D2D /* ViewController.swift */; };
@@ -14,9 +16,13 @@
 		496B3EA4258F23D600F68D2D /* Rokaru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 496B3EA2258F23D600F68D2D /* Rokaru.xcdatamodeld */; };
 		496B3EA6258F23D600F68D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496B3EA5258F23D600F68D2D /* Assets.xcassets */; };
 		496B3EA9258F23D600F68D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B3EA7258F23D600F68D2D /* LaunchScreen.storyboard */; };
+		E91AFE455393A7793E6C7B49 /* Pods_Rokaru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150058FF97E4F36A75DE6B8C /* Pods-Rokaru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.release.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.release.xcconfig"; sourceTree = "<group>"; };
+		493EBA1A258F5969005F6919 /* NgeryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NgeryCard.swift; sourceTree = "<group>"; };
+		493EBA1E258F5A50005F6919 /* NgeryCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NgeryCard.xib; sourceTree = "<group>"; };
 		496B3E96258F23D600F68D2D /* Rokaru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokaru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B3E99258F23D600F68D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496B3E9B258F23D600F68D2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		496B3EA5258F23D600F68D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		496B3EA8258F23D600F68D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496B3EAA258F23D600F68D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		995F87B19068667EAFA36E15 /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.debug.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
+		D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokaru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91AFE455393A7793E6C7B49 /* Pods_Rokaru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16281C6A47B1A3AF0C7AD593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2248B7D72244612662527FE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				995F87B19068667EAFA36E15 /* Pods-Rokaru.debug.xcconfig */,
+				150058FF97E4F36A75DE6B8C /* Pods-Rokaru.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		496B3E8D258F23D600F68D2D = {
 			isa = PBXGroup;
 			children = (
 				496B3E98258F23D600F68D2D /* Rokaru */,
 				496B3E97258F23D600F68D2D /* Products */,
+				2248B7D72244612662527FE8 /* Pods */,
+				16281C6A47B1A3AF0C7AD593 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +89,8 @@
 				496B3E99258F23D600F68D2D /* AppDelegate.swift */,
 				496B3E9B258F23D600F68D2D /* SceneDelegate.swift */,
 				496B3E9D258F23D600F68D2D /* ViewController.swift */,
+				493EBA1E258F5A50005F6919 /* NgeryCard.xib */,
+				493EBA1A258F5969005F6919 /* NgeryCard.swift */,
 				496B3E9F258F23D600F68D2D /* Main.storyboard */,
 				496B3EA5258F23D600F68D2D /* Assets.xcassets */,
 				496B3EA7258F23D600F68D2D /* LaunchScreen.storyboard */,
@@ -77,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 496B3EAD258F23D600F68D2D /* Build configuration list for PBXNativeTarget "Rokaru" */;
 			buildPhases = (
+				E48415DF36819DD7765206F6 /* [CP] Check Pods Manifest.lock */,
 				496B3E92258F23D600F68D2D /* Sources */,
 				496B3E93258F23D600F68D2D /* Frameworks */,
 				496B3E94258F23D600F68D2D /* Resources */,
+				5D69E55972EA2E00679DDE1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,12 +160,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				496B3EA9258F23D600F68D2D /* LaunchScreen.storyboard in Resources */,
+				493EBA1F258F5A50005F6919 /* NgeryCard.xib in Resources */,
 				496B3EA6258F23D600F68D2D /* Assets.xcassets in Resources */,
 				496B3EA1258F23D600F68D2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D69E55972EA2E00679DDE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rokaru/Pods-Rokaru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rokaru/Pods-Rokaru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rokaru/Pods-Rokaru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48415DF36819DD7765206F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rokaru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		496B3E92258F23D600F68D2D /* Sources */ = {
@@ -142,6 +217,7 @@
 			files = (
 				496B3E9E258F23D600F68D2D /* ViewController.swift in Sources */,
 				496B3E9A258F23D600F68D2D /* AppDelegate.swift in Sources */,
+				493EBA1B258F5969005F6919 /* NgeryCard.swift in Sources */,
 				496B3E9C258F23D600F68D2D /* SceneDelegate.swift in Sources */,
 				496B3EA4258F23D600F68D2D /* Rokaru.xcdatamodeld in Sources */,
 			);
@@ -287,6 +363,7 @@
 		};
 		496B3EAE258F23D600F68D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 995F87B19068667EAFA36E15 /* Pods-Rokaru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +382,7 @@
 		};
 		496B3EAF258F23D600F68D2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150058FF97E4F36A75DE6B8C /* Pods-Rokaru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
