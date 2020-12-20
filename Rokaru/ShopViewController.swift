@@ -29,6 +29,25 @@ class ShopViewController: UIViewController {
         }
     }
 
+    @IBAction func directionTapped(_ sender: Any) {
+        if let url = URL(string: "https://maps.apple.com/?address=Jalan%20Haji%20Ridi,%20Pesanggrahan,%20Jakarta,%20Indonesia&auid=8921037561209289179&ll=-6.235405,106.760813&lsp=9902&q=Nasi%20Goreng&_ext=ChgKBAgEEEUKBAgFEAMKBAgGEBQKBAgKEAASJCnESNeD+fEYwDFkDsVaorBaQDliJgGKIvAYwEGc8Tr3v7BaQA%3D%3D"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+    
+    @IBAction func teleponTapped(_ sender: Any) {
+        if let url = URL(string: "tel://622153696969"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
 }
 
 public typealias SimpleClosure = (() -> ())

@@ -7,18 +7,23 @@
 
 import UIKit
 import MaterialComponents
+import TORoundedButton
 
 class ProductViewController: UIViewController {
     @IBOutlet weak var _favoriteButton: MDCFloatingButton!
-    @IBOutlet weak var _addToCartButton: MDCButton!
+    @IBOutlet weak var _pesanButton: RoundedButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         _favoriteButton.setBackgroundColor(UIColor(hex: "#F97EBDFF"))
+        
+        _pesanButton.tappedHandler = {
+            self.performSegue(withIdentifier: "gotoDetailBelanja", sender: nil)
+        }
     }
     
-
+    
     /*
     // MARK: - Navigation
 

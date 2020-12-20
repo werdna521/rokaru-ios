@@ -200,6 +200,9 @@
                                 <rect key="frame" x="24" y="436" width="71" height="34"/>
                                 <color key="tintColor" red="0.42352941176470588" green="0.75686274509803919" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Arahkan"/>
+                                <connections>
+                                    <action selector="directionTapped:" destination="1G2-Bu-hAl" eventType="touchUpInside" id="fLN-2g-tBG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdH-vQ-6Ji" customClass="MDCButton">
                                 <rect key="frame" x="103" y="436" width="89.666666666666686" height="22"/>
@@ -208,6 +211,9 @@
                                 <state key="normal" title=" Telepon" image="phone" catalog="system">
                                     <color key="titleColor" red="0.29411764705882354" green="0.41960784313725491" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="teleponTapped:" destination="1G2-Bu-hAl" eventType="touchUpInside" id="wc7-yL-hAk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFO-iD-LFg" customClass="MDCButton">
                                 <rect key="frame" x="200.66666666666666" y="436" width="37" height="30"/>
@@ -340,11 +346,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="heart" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-L8-xSa" customClass="MDCButton">
-                                <rect key="frame" x="104.66666666666669" y="666" width="205" height="34"/>
-                                <color key="tintColor" red="0.89411764705882346" green="0.71372549019607845" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title=" Tambahkan ke Keranjang"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-wh-NvS" customClass="TORoundedButton">
                                 <rect key="frame" x="20" y="646" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -369,13 +370,11 @@
                             <constraint firstItem="3nL-Ed-CZR" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="ETt-1T-Agn"/>
                             <constraint firstItem="vZg-nw-w5S" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="HCm-Bn-qL7"/>
                             <constraint firstItem="X8k-M4-JA4" firstAttribute="trailing" secondItem="Brt-wh-NvS" secondAttribute="trailing" constant="20" id="ICr-Hw-uBW"/>
-                            <constraint firstItem="Kxt-L8-xSa" firstAttribute="centerX" secondItem="4eL-CW-UUa" secondAttribute="centerX" id="JKs-LX-YQJ"/>
                             <constraint firstItem="X8k-M4-JA4" firstAttribute="bottom" secondItem="Brt-wh-NvS" secondAttribute="bottom" constant="20" id="SVE-cf-y1C"/>
                             <constraint firstItem="bmS-Ti-npb" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="Sqe-cc-AdX"/>
                             <constraint firstItem="xM0-xV-S4m" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="UVz-k3-zqX"/>
                             <constraint firstItem="xM0-xV-S4m" firstAttribute="top" secondItem="AiU-ii-QYW" secondAttribute="bottom" constant="16" id="VDt-ul-BdY"/>
                             <constraint firstItem="Neq-Yf-572" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="32" id="VJB-LM-ABM"/>
-                            <constraint firstItem="X8k-M4-JA4" firstAttribute="bottom" secondItem="Kxt-L8-xSa" secondAttribute="bottom" constant="16" id="aI1-h8-Ikt"/>
                             <constraint firstItem="xL4-mc-TPA" firstAttribute="top" secondItem="X8k-M4-JA4" secondAttribute="top" constant="34" id="bfr-2U-auE"/>
                             <constraint firstItem="vZg-nw-w5S" firstAttribute="top" secondItem="bmS-Ti-npb" secondAttribute="bottom" constant="8" id="hTA-i0-N8b"/>
                             <constraint firstItem="AiU-ii-QYW" firstAttribute="leading" secondItem="X8k-M4-JA4" secondAttribute="leading" constant="24" id="hej-K7-i2I"/>
@@ -388,8 +387,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="PVp-y4-slS"/>
                     <connections>
-                        <outlet property="_addToCartButton" destination="Kxt-L8-xSa" id="jiw-Qg-Zv5"/>
                         <outlet property="_favoriteButton" destination="3nL-Ed-CZR" id="PEa-Oi-RSL"/>
+                        <outlet property="_pesanButton" destination="Brt-wh-NvS" id="Zkj-B5-3pk"/>
+                        <segue destination="mWU-UF-nK2" kind="show" identifier="gotoDetailBelanja" id="NVK-9F-Ydt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohK-Vt-hWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -401,7 +401,7 @@
             <objects>
                 <viewController id="IAk-kL-B1q" customClass="TicketViewController" customModule="Rokaru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snl-0g-Hbt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rokaru" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-K4-3gX">
@@ -435,6 +435,7 @@
                             <constraint firstItem="oag-4C-Eiu" firstAttribute="trailing" secondItem="iZv-bh-K1L" secondAttribute="trailing" constant="30" id="UzV-wn-WnW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TF7-jV-4lb"/>
                     <connections>
                         <outlet property="_ticket" destination="9uv-cf-gZh" id="GiB-Ah-rWg"/>
                     </connections>
@@ -443,12 +444,12 @@
             </objects>
             <point key="canvasLocation" x="1429" y="837"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Belanja View Controller-->
         <scene sceneID="GDT-YF-Fca">
             <objects>
-                <viewController id="mWU-UF-nK2" sceneMemberID="viewController">
+                <viewController id="mWU-UF-nK2" customClass="DetailBelanjaViewController" customModule="Rokaru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vC-dN-PWw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rokaru" translatesAutoresizingMaskIntoConstraints="NO" id="icU-VY-k2c">
@@ -472,6 +473,51 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="yID-92-vbY"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBarang" rowHeight="145" id="AEF-g4-FCd" customClass="BarangTableViewCell" customModule="Rokaru" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AEF-g4-FCd" id="pQe-Lu-qFv">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y97-Dd-VB6">
+                                                    <rect key="frame" x="5" y="5" width="100" height="135"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="7vs-QC-2Oa"/>
+                                                        <constraint firstAttribute="height" constant="100" id="xdA-5d-6Tx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasi Goreng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-Rl-v3e">
+                                                    <rect key="frame" x="115" y="21" width="97.666666666666686" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp25.000 x 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm0-uR-FvU">
+                                                    <rect key="frame" x="115" y="50" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jm0-uR-FvU" firstAttribute="leading" secondItem="y97-Dd-VB6" secondAttribute="trailing" constant="10" id="0Cw-fM-iib"/>
+                                                <constraint firstItem="hpG-Rl-v3e" firstAttribute="top" secondItem="pQe-Lu-qFv" secondAttribute="topMargin" constant="10" id="1Uy-JM-toU"/>
+                                                <constraint firstItem="Jm0-uR-FvU" firstAttribute="top" secondItem="hpG-Rl-v3e" secondAttribute="bottom" constant="8" symbolic="YES" id="967-8v-l4B"/>
+                                                <constraint firstAttribute="bottom" secondItem="y97-Dd-VB6" secondAttribute="bottom" constant="5" id="L4m-t4-2l0"/>
+                                                <constraint firstItem="y97-Dd-VB6" firstAttribute="top" secondItem="pQe-Lu-qFv" secondAttribute="top" constant="5" id="jnj-DO-9iX"/>
+                                                <constraint firstItem="y97-Dd-VB6" firstAttribute="leading" secondItem="pQe-Lu-qFv" secondAttribute="leading" constant="5" id="x0h-8C-oXu"/>
+                                                <constraint firstItem="hpG-Rl-v3e" firstAttribute="leading" secondItem="y97-Dd-VB6" secondAttribute="trailing" constant="10" id="zwM-AU-ZSn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="_barangImage" destination="y97-Dd-VB6" id="4xl-Rz-znk"/>
+                                            <outlet property="_barangName" destination="hpG-Rl-v3e" id="uM9-0K-Tz9"/>
+                                            <outlet property="_barangPrice" destination="Jm0-uR-FvU" id="kqy-Vb-XkF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengiriman:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4e-MK-QL0">
                                 <rect key="frame" x="29.999999999999993" y="516" width="76.333333333333314" height="17"/>
@@ -487,7 +533,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg4-jG-Hr4" customClass="TORoundedButton">
-                                <rect key="frame" x="20" y="666" width="374" height="50"/>
+                                <rect key="frame" x="20" y="646" width="374" height="50"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6z4-yx-l8J"/>
@@ -523,10 +569,16 @@
                             <constraint firstItem="njL-m3-YLh" firstAttribute="bottom" secondItem="Zg4-jG-Hr4" secondAttribute="bottom" constant="20" id="yUa-I1-nog"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="A0K-nP-Lnc"/>
+                    <connections>
+                        <outlet property="_buttonBayar" destination="Zg4-jG-Hr4" id="zAG-dO-09G"/>
+                        <outlet property="_tableview" destination="dKT-3W-eF3" id="7ar-rx-WZg"/>
+                        <segue destination="IAk-kL-B1q" kind="show" identifier="gotoBayar" id="GrR-bL-odG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYW-n3-CAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="848"/>
+            <point key="canvasLocation" x="563.768115942029" y="847.82608695652175"/>
         </scene>
     </scenes>
     <designables>
