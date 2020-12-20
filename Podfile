@@ -13,4 +13,5 @@ target 'Rokaru' do
   pod 'MaterialComponents/Buttons+Theming'
   pod 'MaterialComponents/Cards'
   pod 'QRCode'
+  pod 'SwiftHTTP', '~> 3.0'
 end
