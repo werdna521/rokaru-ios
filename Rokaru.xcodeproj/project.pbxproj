@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		493EBA1B258F5969005F6919 /* NgeryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493EBA1A258F5969005F6919 /* NgeryCard.swift */; };
 		493EBA1F258F5A50005F6919 /* NgeryCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493EBA1E258F5A50005F6919 /* NgeryCard.xib */; };
+		493EBA34258F7649005F6919 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493EBA33258F7649005F6919 /* ShopViewController.swift */; };
 		496B3E9A258F23D600F68D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3E99258F23D600F68D2D /* AppDelegate.swift */; };
 		496B3E9C258F23D600F68D2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3E9B258F23D600F68D2D /* SceneDelegate.swift */; };
 		496B3E9E258F23D600F68D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B3E9D258F23D600F68D2D /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		150058FF97E4F36A75DE6B8C /* Pods-Rokaru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.release.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.release.xcconfig"; sourceTree = "<group>"; };
 		493EBA1A258F5969005F6919 /* NgeryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NgeryCard.swift; sourceTree = "<group>"; };
 		493EBA1E258F5A50005F6919 /* NgeryCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NgeryCard.xib; sourceTree = "<group>"; };
+		493EBA33258F7649005F6919 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		496B3E96258F23D600F68D2D /* Rokaru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rokaru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B3E99258F23D600F68D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496B3E9B258F23D600F68D2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				493EBA1E258F5A50005F6919 /* NgeryCard.xib */,
 				493EBA1A258F5969005F6919 /* NgeryCard.swift */,
 				496B3E9F258F23D600F68D2D /* Main.storyboard */,
+				493EBA33258F7649005F6919 /* ShopViewController.swift */,
 				496B3EA5258F23D600F68D2D /* Assets.xcassets */,
 				496B3EA7258F23D600F68D2D /* LaunchScreen.storyboard */,
 				496B3EAA258F23D600F68D2D /* Info.plist */,
@@ -217,6 +220,7 @@
 			files = (
 				496B3E9E258F23D600F68D2D /* ViewController.swift in Sources */,
 				496B3E9A258F23D600F68D2D /* AppDelegate.swift in Sources */,
+				493EBA34258F7649005F6919 /* ShopViewController.swift in Sources */,
 				493EBA1B258F5969005F6919 /* NgeryCard.swift in Sources */,
 				496B3E9C258F23D600F68D2D /* SceneDelegate.swift in Sources */,
 				496B3EA4258F23D600F68D2D /* Rokaru.xcdatamodeld in Sources */,
