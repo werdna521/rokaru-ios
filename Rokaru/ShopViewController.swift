@@ -7,6 +7,7 @@
 
 import UIKit
 import MaterialComponents
+import SwiftHTTP
 
 class ShopViewController: UIViewController {
     @IBOutlet weak var _directionButton: MDCButton!
@@ -15,6 +16,15 @@ class ShopViewController: UIViewController {
     @IBOutlet weak var _product: UIImageView! {
         didSet {
             self._product.tappable = true
+        }
+    }
+    
+    private func loadData() {
+        HTTP.GET("https://rokaru-api.binusian.id/umkm/4") { response in
+            if let error = response.error {
+                return
+            }
+            let data = response.data
         }
     }
     
@@ -27,6 +37,9 @@ class ShopViewController: UIViewController {
         self._product.callback = {
             self.performSegue(withIdentifier: "shop-to-product", sender: nil)
         }
+        
+        loadData()
+        
     }
 
     @IBAction func directionTapped(_ sender: Any) {
