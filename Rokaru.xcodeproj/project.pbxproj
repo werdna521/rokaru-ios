@@ -48,6 +48,7 @@
 		49B4249B258FD2BD006136B8 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		507EA03C258FE86400E05EEA /* DetailBelanjaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBelanjaViewController.swift; sourceTree = "<group>"; };
 		507EA03F258FEC4400E05EEA /* BarangTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarangTableViewCell.swift; sourceTree = "<group>"; };
+		507EA042258FF9B800E05EEA /* Rokaru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rokaru.entitlements; sourceTree = "<group>"; };
 		995F87B19068667EAFA36E15 /* Pods-Rokaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rokaru.debug.xcconfig"; path = "Target Support Files/Pods-Rokaru/Pods-Rokaru.debug.xcconfig"; sourceTree = "<group>"; };
 		D89D420C6F816AEBBFAD4D03 /* Pods_Rokaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rokaru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +103,7 @@
 		496B3E98258F23D600F68D2D /* Rokaru */ = {
 			isa = PBXGroup;
 			children = (
+				507EA042258FF9B800E05EEA /* Rokaru.entitlements */,
 				496B3E99258F23D600F68D2D /* AppDelegate.swift */,
 				496B3E9B258F23D600F68D2D /* SceneDelegate.swift */,
 				496B3E9D258F23D600F68D2D /* ViewController.swift */,
@@ -399,7 +401,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rokaru/Rokaru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P9H7MB9HY;
 				INFOPLIST_FILE = Rokaru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mamak.kuda.Rokaru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,7 +423,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rokaru/Rokaru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P9H7MB9HY;
 				INFOPLIST_FILE = Rokaru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mamak.kuda.Rokaru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
